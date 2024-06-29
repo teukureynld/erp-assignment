@@ -1,31 +1,37 @@
 "use client";
 import React from 'react';
 import Head from 'next/head';
-import "bootstrap/dist/css/bootstrap.min.css"
+import Link from 'next/link';
+import WorkerForm from '../components/WorkerForm';
 
-export default function HomePage() {
+import "bootstrap/dist/css/bootstrap.min.css";
 
+
+export default function HomePage() { 
   return (
     <React.Fragment>
       <Head>
         <title>Karyawan Login</title>
       </Head>
 
-      <div class="container my-5">
+      <div className="container my-5">
         <h1 style={{color : 'blue'}}>Login To Your Account</h1>
         <form>
-          <div class="form-group">
-            <label for="input-username">username</label>
-            <input type="email" class="form-control" id="input-username" aria-describedby="emailHelp" placeholder=""></input>
+          <div className="form-group">
+            <label htmlFor="input-username">Username</label>
+            <input type="email" className="form-control" id="input-username" aria-describedby="emailHelp" placeholder=""></input>
           </div>
-          <div class="form-group">
-            <label for="input-password">Password</label>
-            <input type="password" class="form-control" id="input-password" placeholder=""></input>
+          <div className="form-group">
+            <label htmlFor="input-password">Password</label>
+            <input type="password" className="form-control" id="input-password" placeholder=""></input>
           </div>
-          <div class="form-group form-check">
+          <div className="form-group form-check">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
+
+        {/* Include WorkerForm component here */}
+        <WorkerForm />
       </div>
     </React.Fragment>
   )
