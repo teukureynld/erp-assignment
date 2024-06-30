@@ -6,10 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function LoginForm() {
     return (
-        <React.Fragment>
-            <Head>
-                <title>Karyawan Login</title>
-            </Head>
             <div className="d-flex justify-content-center align-items-center vh-100">
                 <div className="card shadow p-4" style={{ width: '100%', maxWidth: '400px' }}>
                     <div className="container my-5 mb-3">
